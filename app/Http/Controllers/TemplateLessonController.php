@@ -116,10 +116,11 @@ class TemplateLessonController extends Controller
     public function export()
     {
         try {
-            Excel::store(new TemplateLessonExport, 'расписание.xlsx');
+            Excel::store(new TemplateLessonExport, 'Расписание_с_сайта.xlsx');
+            $file= storage_path() . '/app/Расписание_с_сайта.xlsx';
         } catch (Exception $exception) {
             return back()->withErrors(['file' => 'Произошла ошибка во время формирования файла']);
         }
-        return back();
+        return response()->download($file);
     }
 }

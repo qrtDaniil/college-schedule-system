@@ -280,11 +280,11 @@
                 </div>
             </div>
 
-            <div class="text-right mt-1">
-                <Link class="px-4 p-2 border bg-gray-800 text-white rounded font-semibold hover:border hover:border-black hover:text-black hover:font-semibold hover:bg-white duration-150"
-                    :href="'template-lessons/export'">
+            <div class="mt-1">
+                <a class="px-4 p-2 border bg-gray-800 text-white rounded font-semibold hover:border hover:border-black hover:text-black hover:font-semibold hover:bg-white duration-150"
+                    href="template-lessons/export">
                     Скачать расписание
-                </Link>
+                </a>
             </div>
 
         </div>

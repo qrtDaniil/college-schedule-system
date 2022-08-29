@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreSubjectRequest;
 use App\Http\Requests\UpdateSubjectRequest;
 use App\Imports\SubjectsImport;
+use App\Models\Lesson;
 use App\Models\Subject;
+use App\Models\TemplateLesson;
 use App\Services\SubjectService;
 use Exception;
 use Illuminate\Http\RedirectResponse;
@@ -123,14 +125,16 @@ class SubjectController extends Controller
             Subject::truncate();
             Schema::enableForeignKeyConstraints();
 
+            $path = $request->file('file')->storeAs('app', 'import.xls');
+
             try {
-                Excel::import(new SubjectsImport, $request->file('file'));
+                Excel::import(new SubjectsImport, $path);
             } catch (Exception $exception) {
                 return back()->withErrors(['file' => 'Произошла ошибка во время чтения файла']);
             }
-
             return back()->with(['message' => 'Файл был успешно загружен в базу данных']);
-        } else {
+        }
+        else {
             return back()->withErrors(['file' => 'Сначала вам необходимо выбрать файл для загрузки']);
         }
     }
