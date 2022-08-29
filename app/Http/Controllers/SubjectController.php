@@ -5,9 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreSubjectRequest;
 use App\Http\Requests\UpdateSubjectRequest;
 use App\Imports\SubjectsImport;
-use App\Models\Lesson;
 use App\Models\Subject;
-use App\Models\TemplateLesson;
 use App\Services\SubjectService;
 use Exception;
 use Illuminate\Http\RedirectResponse;
@@ -125,7 +123,7 @@ class SubjectController extends Controller
             Subject::truncate();
             Schema::enableForeignKeyConstraints();
 
-            $path = $request->file('file')->storeAs('app', 'import.xls');
+            $path = $request->file('file')->storeAs('excel', 'import.xls');
 
             try {
                 Excel::import(new SubjectsImport, $path);
