@@ -20,17 +20,17 @@
                 <div>
                     @if($lesson->week_number === 0)
                     <div>
-                        {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                        {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                         <br>
                     </div>
                     @elseif($lesson->week_number === 1)
                     <div>
-                        1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                        1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                         <br>
                     </div>
                     @elseif($lesson->week_number === 2)
                     <div>
-                        2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                        2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                         <br>
                     </div>
                     @endif
@@ -72,17 +72,17 @@
                                 <div>
                                     @if($lesson->week_number === 0)
                                         <div>
-                                            {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @elseif($lesson->week_number === 1)
                                         <div>
-                                            1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @elseif($lesson->week_number === 2)
                                         <div>
-                                            2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @endif
@@ -124,17 +124,17 @@
                                 <div>
                                     @if($lesson->week_number === 0)
                                         <div>
-                                            {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @elseif($lesson->week_number === 1)
                                         <div>
-                                            1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @elseif($lesson->week_number === 2)
                                         <div>
-                                            2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @endif
@@ -176,17 +176,17 @@
                                 <div>
                                     @if($lesson->week_number === 0)
                                         <div>
-                                            {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @elseif($lesson->week_number === 1)
                                         <div>
-                                            1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @elseif($lesson->week_number === 2)
                                         <div>
-                                            2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @endif
@@ -228,17 +228,17 @@
                                 <div>
                                     @if($lesson->week_number === 0)
                                         <div>
-                                            {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @elseif($lesson->week_number === 1)
                                         <div>
-                                            1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            1 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @elseif($lesson->week_number === 2)
                                         <div>
-                                            2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' . $lesson->subject->teacher }}
+                                            2 н: {{ $lesson->subject->index . ' ' . $lesson->subject->name . ' ' }}<?=str_replace('(Доп.договор)', '', $lesson->subject->teacher)?>
                                             <br>
                                         </div>
                                     @endif
