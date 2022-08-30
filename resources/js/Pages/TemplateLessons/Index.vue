@@ -312,27 +312,27 @@ defineProps({
 
 let currentGrade = ref(route().params.grade ? route().params.grade : 1);
 
-let showCreateModal = ref(false)
-let showEditModal = ref(false)
+const showCreateModal = ref(false)
+const showEditModal = ref(false)
 
-let position = []
-let lesson = null
+const position = ref([])
+const lesson = ref(null)
 
-function openCreateModal(position) {
-    this.showCreateModal = true;
-    this.position = position
+function openCreateModal(position_) {
+    showCreateModal.value = true;
+    position.value = position_
 }
 function closeCreateModal() {
-    this.showCreateModal = !showCreateModal
+    showCreateModal.value = !showCreateModal
 }
 
-function openEditModal(lesson, position) {
-    this.showEditModal = true;
-    this.position = position
-    this.lesson = lesson
+function openEditModal(lesson_, position_) {
+    showEditModal.value = true;
+    position.value = position_
+    lesson.value = lesson_
 }
 function closeEditModal() {
-    this.showEditModal = !showEditModal
+    showEditModal.value = !showEditModal
 }
 
 </script>
